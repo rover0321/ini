@@ -1,6 +1,7 @@
 ###############################################################################
 # PATH
 ###############################################################################
+export PATH=~/bin:$PATH
 export JAVA_HOME=~/ins/jdk
 export CLASSPATH=$JAVA_HOME/lib/tools.jar:$JAVA_HOME/jre/lib/rt.jar:.
 export ANDROID_HOME=~/ins/adt/sdk
