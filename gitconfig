@@ -3,3 +3,4 @@
 	email = rover0321@qq.com
 [core]
     editor=vim
+    excludesfile=~/.gitignore
