@@ -28,3 +28,9 @@ export PATH=~/ins/adt/sdk/tools:$PATH
 export PATH=~/ins/adt/ndk:$PATH
 export PATH=~/ins/bcp/bin:$PATH
 export PATH=~/ins/ant/bin:$PATH
+
+if [ "$BASH" ]; then
+    if [ -f ~/.bashrc ]; then
+        . ~/.bashrc
+    fi
+fi

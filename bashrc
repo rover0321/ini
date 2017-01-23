@@ -288,10 +288,3 @@ alias iml='find . -name *.iml -o -name .idea -o -name target | while read i; do 
 if [ -f ~/.bash ]; then
 	source ~/.bash
 fi
-
-##############################################################################
-# SOURCE ENV
-##############################################################################
-if [ -f ~/.profile ];then
-    source ~/.profile
-fi
