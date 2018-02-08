@@ -30,6 +30,7 @@ export PATH=~/ins/bcp/bin:$PATH
 export PATH=~/ins/ant/bin:$PATH
 export PATH=~/.local/bin:$PATH
 export GOROOT=~/ins/go
+export GOPATH=~/wks/goproj
 export PATH=$GOROOT/bin:$PATH
 
 if [ "$BASH" ]; then
