@@ -233,6 +233,7 @@ alias use='. ~/.bashrc'
 alias loc='locate'
 alias evc='evince'
 alias o='open'
+alias zl='zeal'
 
 # set time stamp for tag operation
 alias sts='timestamp=`date +%Y%m%d%H%M%S` && echo timestamp=$timestamp'
