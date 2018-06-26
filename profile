@@ -1,6 +1,7 @@
 ###############################################################################
 # PATH
 ###############################################################################
+export PATH=~/.local/bin:$PATH # pip will install command under this dir.
 export PATH=~/bin:$PATH
 export JAVA_HOME=~/ins/jdk
 export CLASSPATH=$JAVA_HOME/lib/tools.jar:$JAVA_HOME/jre/lib/rt.jar:.
