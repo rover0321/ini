@@ -32,6 +32,7 @@ export PATH=~/ins/ant/bin:$PATH
 export PATH=~/ins/cmake/bin:$PATH
 export PATH=~/ins/node-latest/bin:$PATH
 export GETH=~/bin/geth
+export BOOST_ROOT=/home/shareslink-05/ins/boost_1_68_0
 
 if [ "$BASH" ]; then
     if [ -f ~/.bashrc ]; then
