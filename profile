@@ -33,6 +33,8 @@ export PATH=~/ins/cmake/bin:$PATH
 export PATH=~/ins/node-latest/bin:$PATH
 export GETH=~/bin/geth
 export BOOST_ROOT=/home/shareslink-05/ins/boost_1_68_0
+export OPEN_RESTY_ROOT=/usr/local/openresty/nginx/sbin
+export PATH=$OPEN_RESTY_ROOT:$PATH
 
 if [ "$BASH" ]; then
     if [ -f ~/.bashrc ]; then
