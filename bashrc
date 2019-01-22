@@ -233,6 +233,7 @@ alias use='. ~/.bashrc'
 alias loc='locate'
 alias evc='evince'
 alias o='open'
+alias f='dde-file-manager'
 alias zl='zeal'
 
 # set time stamp for tag operation
