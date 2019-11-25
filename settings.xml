@@ -239,7 +239,7 @@ under the License.
     </profile>
     -->
     <profile>    
-    <id>jdk-1.8</id>    
+    <id>jdk-1.8-JD</id>    
       <activation>    
         <activeByDefault>true</activeByDefault>    
         <jdk>1.8</jdk>    
@@ -248,8 +248,45 @@ under the License.
         <maven.compiler.source>1.8</maven.compiler.source>    
         <maven.compiler.target>1.8</maven.compiler.target>    
         <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>    
-      </properties>    
+      </properties> 
+      <!-- 依赖仓库地址 -->
+    <repositories>
+        <repository>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <id>libs-releases</id>
+            <name>libs-releases</name>
+            <url>http://artifactory.jd.com/libs-releases</url>
+        </repository>
+        <repository>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <id>libs-snapshots</id>
+            <name>libs-snapshots</name>
+            <url>http://artifactory.jd.com/libs-snapshots</url>
+        </repository>
+    </repositories>
+    <!-- 插件仓库地址 -->
+    <pluginRepositories>
+        <pluginRepository>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <id>plugins-releases</id>
+            <name>plugins-releases</name>
+            <url>http://artifactory.jd.com/plugins-releases</url>
+        </pluginRepository>
+        <pluginRepository>
+            <snapshots/>
+            <id>plugins-snapshots</id>
+            <name>plugins-snapshots</name>
+            <url>http://artifactory.jd.com/plugins-snapshots</url>
+        </pluginRepository>
+    </pluginRepositories>   
     </profile>
+    
   </profiles>
 
   <!-- activeProfiles
