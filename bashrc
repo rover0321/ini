@@ -291,19 +291,7 @@ alias iml='find . -name *.iml -o -name .idea -o -name target | while read i; do 
 if [ -f ~/.bash ]; then
 	source ~/.bash
 fi
-# added by Anaconda3 2018.12 installer
-# >>> conda init >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$(CONDA_REPORT_ERRORS=false '/home/huangxiang/sft/anaconda3/bin/conda' shell.bash hook 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    \eval "$__conda_setup"
-else
-    if [ -f "/home/huangxiang/sft/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/huangxiang/sft/anaconda3/etc/profile.d/conda.sh"
-        CONDA_CHANGEPS1=false conda activate base
-    else
-        \export PATH="/home/huangxiang/sft/anaconda3/bin:$PATH"
-    fi
+
+if [ -f ~/.profile ]; then
+	source ~/.profile
 fi
-unset __conda_setup
-# <<< conda init <<<
