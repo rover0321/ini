@@ -239,18 +239,18 @@ under the License.
     </profile>
     -->
     <profile>    
-    <id>jdk-1.8-JD</id>    
-      <activation>    
-        <activeByDefault>true</activeByDefault>    
-        <jdk>1.8</jdk>    
-      </activation>    
+      <id>jdk-1.8-JD</id>    
+        <activation>    
+          <activeByDefault>false</activeByDefault>    
+          <jdk>1.8</jdk>    
+        </activation>    
       <properties>    
         <maven.compiler.source>1.8</maven.compiler.source>    
         <maven.compiler.target>1.8</maven.compiler.target>    
         <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>    
       </properties> 
       <!-- 依赖仓库地址 -->
-    <repositories>
+      <repositories>
         <repository>
             <snapshots>
                 <enabled>true</enabled>
@@ -267,26 +267,46 @@ under the License.
             <name>libs-snapshots</name>
             <url>http://artifactory.jd.com/libs-snapshots</url>
         </repository>
-    </repositories>
-    <!-- 插件仓库地址 -->
-    <pluginRepositories>
-        <pluginRepository>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-            <id>plugins-releases</id>
-            <name>plugins-releases</name>
-            <url>http://artifactory.jd.com/plugins-releases</url>
-        </pluginRepository>
-        <pluginRepository>
-            <snapshots/>
-            <id>plugins-snapshots</id>
-            <name>plugins-snapshots</name>
-            <url>http://artifactory.jd.com/plugins-snapshots</url>
-        </pluginRepository>
-    </pluginRepositories>   
+      </repositories>
+      <!-- 插件仓库地址 -->
+      <pluginRepositories>
+          <pluginRepository>
+              <snapshots>
+                  <enabled>true</enabled>
+              </snapshots>
+              <id>plugins-releases</id>
+              <name>plugins-releases</name>
+              <url>http://artifactory.jd.com/plugins-releases</url>
+          </pluginRepository>
+          <pluginRepository>
+              <snapshots/>
+              <id>plugins-snapshots</id>
+              <name>plugins-snapshots</name>
+              <url>http://artifactory.jd.com/plugins-snapshots</url>
+          </pluginRepository>
+      </pluginRepositories>   
     </profile>
-    
+    <profile>    
+      <id>jdk-1.8-default</id>    
+        <activation>    
+          <activeByDefault>true</activeByDefault>    
+          <jdk>1.8</jdk>    
+        </activation>    
+      <properties>    
+        <maven.compiler.source>1.8</maven.compiler.source>    
+        <maven.compiler.target>1.8</maven.compiler.target>    
+        <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>    
+      </properties> 
+      <!-- 依赖仓库地址 -->
+      <repositories>
+        <repository>  
+          <id>alimaven</id>
+          <name>aliyun maven</name>
+          <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+        </repository>
+      </repositories>
+      <!-- 插件仓库地址 -->  
+    </profile>    
   </profiles>
 
   <!-- activeProfiles
