@@ -283,15 +283,3 @@ alias log='tail -f ~/ins/tmc/logs/catalina.out'
 alias taf='tail -f'
 alias iml='find . -name *.iml -o -name .idea -o -name target | while read i; do echo "delete $i"; rm $i; done; find . -name *.iml -o -name .idea -o -name target | while read i; do echo "delete $i"; rm $i; done;'
 
-###############################################################################
-# EXTRAL BASH CONFIG
-###############################################################################
-# ~/.bash is used for extra ENV
-# pls hold this line at the end of this file
-if [ -f ~/.bash ]; then
-	source ~/.bash
-fi
-
-if [ -f ~/.profile ]; then
-	source ~/.profile
-fi
