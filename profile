@@ -37,3 +37,10 @@ export OPEN_RESTY_ROOT=/usr/local/openresty/nginx/sbin
 export PATH=$OPEN_RESTY_ROOT:$PATH
 export CONDA_HOME=~/ins/anaconda3/condabin
 export PATH=$CONDA_HOME:$PATH
+
+
+if [ "$BASH" ]; then
+    if [ -f ~/.bashrc ]; then
+        . ~/.bashrc
+    fi
+fi
