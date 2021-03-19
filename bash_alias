@@ -275,3 +275,10 @@ alias pst='ps aux | grep tomcat'
 alias log='tail -f ~/ins/tmc/logs/catalina.out'
 alias taf='tail -f'
 alias iml='find . -name *.iml -o -name .idea -o -name target | while read i; do echo "delete $i"; rm $i; done; find . -name *.iml -o -name .idea -o -name target | while read i; do echo "delete $i"; rm $i; done;'
+
+
+
+###############################################################################
+# work
+###############################################################################
+alias jdc='cd ~/wks/jd-doc'
