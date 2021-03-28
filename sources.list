@@ -1,16 +1,5 @@
-deb http://mirrors.aliyun.com/ubuntu/ xenial main
-deb-src http://mirrors.aliyun.com/ubuntu/ xenial main
-
-deb http://mirrors.aliyun.com/ubuntu/ xenial-updates main
-deb-src http://mirrors.aliyun.com/ubuntu/ xenial-updates main
-
-deb http://mirrors.aliyun.com/ubuntu/ xenial universe
-deb-src http://mirrors.aliyun.com/ubuntu/ xenial universe
-deb http://mirrors.aliyun.com/ubuntu/ xenial-updates universe
-deb-src http://mirrors.aliyun.com/ubuntu/ xenial-updates universe
-
-deb http://mirrors.aliyun.com/ubuntu/ xenial-security main
-deb-src http://mirrors.aliyun.com/ubuntu/ xenial-security main
-deb http://mirrors.aliyun.com/ubuntu/ xenial-security universe
-deb-src http://mirrors.aliyun.com/ubuntu/ xenial-security universe
-
+#deb http://raspbian.raspberrypi.org/raspbian/ buster main contrib non-free rpi
+# Uncomment line below then 'apt-get update' to enable 'apt-get source'
+#deb-src http://raspbian.raspberrypi.org/raspbian/ buster main contrib non-free rpi
+deb http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ buster main non-free contrib rpi
+deb-src http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ buster main non-free contrib rpi
