@@ -37,3 +37,5 @@ export OPEN_RESTY_ROOT=/usr/local/openresty/nginx/sbin
 export PATH=$OPEN_RESTY_ROOT:$PATH
 export CONDA_HOME=~/ins/anaconda3/condabin
 export PATH=$CONDA_HOME:$PATH
+export HADOOP_HOME=~/sft/hadoop
+export PATH=$PATH:$HADOOP_HOME/bin
